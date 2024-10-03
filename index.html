@@ -17,14 +17,30 @@
                 orange 0, orange 5px, 
                 black 5px, black 10px, 
                 grey 10px, grey 15px);
-            background-size: 50px 50px; /* Repetir el patrón cada 5cm aprox */
+            background-size: 50px 50px;
+        }
+
+        /* Posicionar el nombre en la esquina superior izquierda */
+        .name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: orange;
+            font-size: 32px;
+            line-height: 1; /* Controlar el espaciado entre líneas */
+        }
+
+        .name span {
+            display: block; /* Cada palabra en una nueva línea */
         }
 
         /* Contenedor del currículum */
         .curriculum {
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el contenido */
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
-            margin: 50px;
+            margin: 100px 50px;
             border-radius: 10px;
         }
 
@@ -44,9 +60,16 @@
 </head>
 <body>
 
+    <!-- Nombre en la esquina superior izquierda formando un cuadrado -->
+    <div class="name">
+        <span>Ian</span>
+        <span>Del</span>
+        <span>Río</span>
+    </div>
+
     <!-- Contenido del currículum -->
     <div class="curriculum">
-        <h1>Ian - Currículum Vitae</h1>
+        <h1>Currículum Vitae</h1>
 
         <div class="section">
             <h2>Educación</h2>
