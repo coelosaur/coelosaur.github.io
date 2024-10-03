@@ -1,0 +1,109 @@
+:root {
+    --main-color: #033b70;
+    --secondary-color: #f4a261;
+    --font-primary: 'Arial', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #033b70;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #005f99;
+    transition: 0.3s;
+}
+
+/* Layout general */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Columna izquierda */
+.left-column {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Columna derecha */
+.right-column {
+    flex: 1;
+    background-color: #033b70;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nombre */
+h1 {
+    font-size: 28px;
+    color: #033b70;
+}
+
+/* Secciones principales */
+h2 {
+    color: #033b70;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Estilos de texto */
+p {
+    line-height: 1.6;
+}
+
+/* Contacto */
+.contact {
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.skills-section {
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Listas de habilidades y otros */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,71 @@
+:root {
+    --main-color: #033b70;
+    --secondary-color: #f4a261;
+    --font-primary: 'Arial', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin:0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #033b70;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #005f99;
+    transition: 0.3s;
+}
+
+/* Estilo para el contenido de publicaciones */
+.container {
+    max-width: 1200px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #033b70;
+}
+
+/* Secciones principales */
+h2 {
+    color: #033b70;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Estilos de texto */
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #033b70; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+ 
