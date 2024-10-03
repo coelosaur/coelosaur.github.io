@@ -3,95 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Ian</title>
+    <title>Ian del Rio - CV</title>
     <style>
-        /* Crear el patrón diagonal */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #033b70;
+            overflow: hidden;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
             color: white;
-            background-color: white;
-            background-image: 
-                repeating-linear-gradient(45deg, 
-                orange 0, orange 5px, 
-                black 5px, black 10px, 
-                grey 10px, grey 15px);
-            background-size: 50px 50px;
-        }
-
-        /* Posicionar el nombre en la esquina superior izquierda */
-        .name {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: black;
-            font-size: 32px;
-            line-height: 1; /* Controlar el espaciado entre líneas */
-        }
-
-        .name span {
-            display: block; /* Cada palabra en una nueva línea */
-        }
-
-        /* Contenedor del currículum */
-        .curriculum {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            margin: 100px 50px;
-            border-radius: 10px;
-        }
-
-        h1, h2 {
-            color: orange;
-        }
-
-        p {
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
             font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #005f99;
+            transition: 0.3s;
+        }
+
+        /* Layout general */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Columna izquierda */
+        .left-column {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Columna derecha */
+        .right-column {
+            flex: 1;
+            background-color: #033b70;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Nombre */
+        h1 {
+            font-size: 28px;
+            color: #033b70;
+        }
+
+        /* Secciones principales */
+        h2 {
+            color: #033b70;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        /* Estilos de texto */
+        p {
             line-height: 1.6;
         }
 
-        .section {
-            margin-bottom: 30px;
+        /* Contacto */
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .skills-section {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        /* Listas de habilidades y otros */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Nombre en la esquina superior izquierda formando un cuadrado -->
-    <div class="name">
-        <span>Ian</span>
-        <span>Del</span>
-        <span>Río</span>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#education">Educación</a>
+        <a href="#skills">Habilidades</a>
+        <a href="publications.html">Publicaciones</a> <!-- Enlace a la página de Publicaciones -->
     </div>
 
-    <!-- Contenido del currículum -->
-    <div class="curriculum">
-        <h1>Currículum Vitae</h1>
+    <div class="container">
+        <!-- Columna Izquierda -->
+        <div class="left-column">
+            <h1 id="home">Ian del Rio</h1>
 
-        <div class="section">
-            <h2>Educación</h2>
-            <p>PhD en Ciencias de la Tierra - Universidad de XYZ</p>
-            <p>Licenciatura en Geología - Universidad de ABC</p>
+            <h2 id="experience">Professional experience</h2>
+            <p><strong>Data Analyst,</strong> May 2022 - Present<br>
+                <em>Fourth Sail Capital, LP (São Paulo, Brazil)</em></p>
+            <ul>
+                <li>Collaborate with the equity research team to identify alternative data sources for energy, mining, agribusiness, and oil & gas sectors.</li>
+                <li>Reproduce market intelligence analysis from sell-side reports.</li>
+                <li>End-to-end data project development including web scraping, data modeling, ETL processes, and database maintenance.</li>
+                <li>Conduct statistical analyses to track industry KPIs and extract relevant insights.</li>
+            </ul>
+
+            <p><strong>Research Scientist,</strong> Sep 2017 - May 2022<br>
+                <em>Universidade de São Paulo (São Paulo, Brazil)</em></p>
+            <ul>
+                <li>Led the development of novel analytical methods using numerical modeling and machine learning.</li>
+                <li>Provided comprehensive laboratory services to external clients.</li>
+                <li>Processed satellite imagery using Google Earth Engine.</li>
+            </ul>
+
+            <p><strong>Research Assistant,</strong> May 2014 - Aug 2017<br>
+                <em>CIGIDEN (Antofagasta, Chile)</em></p>
+            <ul>
+                <li>Supported field and laboratory work for natural hazard assessments.</li>
+                <li>Operated and analyzed data from GPS and drones.</li>
+            </ul>
+
+            <h2 id="education">Education history</h2>
+            <p><strong>Ph.D. in Earth Sciences,</strong> May 2014 - May 2019<br>
+                <em>Universidad Católica del Norte (Antofagasta, Chile)</em></p>
+            <p><strong>M.Sc. in Engineering,</strong> Sep 2012 - Oct 2013<br>
+                <em>Universidad Complutense de Madrid (Madrid, Spain)</em></p>
+            <p><strong>B.Sc. in Earth Sciences,</strong> Sep 2006 - May 2012<br>
+                <em>Universidad de Oviedo (Oviedo, Spain)</em></p>
         </div>
 
-        <div class="section">
-            <h2>Experiencia Profesional</h2>
-            <p>Data Analyst en empresa de inversión, análisis de datos y modelado financiero.</p>
-            <p>Investigador en climatología y recursos naturales.</p>
-        </div>
+        <!-- Columna Derecha -->
+        <div class="right-column">
+            <div class="contact">
+                <img src="profile-image.jpg" alt="Profile Image">
+                <div class="contact-info">
+                    <p>Email: <br><strong>iandelriogarcia@gmail.com</strong></p>
+                    <p>Phone: <br><strong>+55 (11) 99473-0326</strong></p>
+                </div>
+            </div>
 
-        <div class="section">
-            <h2>Habilidades</h2>
-            <p>Análisis de datos, Programación en Python, Modelos de sostenibilidad, Geocronología, Cambio climático.</p>
-        </div>
+            <div class="skills-section" id="skills">
+                <h2>Technical skills</h2>
+                <ul>
+                    <li>R, Python, SQL</li>
+                    <li>Tableau, Power BI</li>
+                    <li>Git, Airflow</li>
+                    <li>Data analysis, Statistics</li>
+                    <li>Regression, Machine learning</li>
+                    <li>Geoprocessing: ArcGIS, QGIS</li>
+                </ul>
 
-        <div class="section">
-            <h2>Publicaciones</h2>
-            <p>Título de una publicación relevante - Revista XYZ</p>
-            <p>Título de otra publicación - Conferencia ABC</p>
+                <h2>Soft skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Collaboration</li>
+                    <li>Adaptability</li>
+                    <li>Critical thinking</li>
+                    <li>Process oriented</li>
+                    <li>Time management</li>
+                </ul>
+
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (fluent)</li>
+                    <li>Portuguese (fluent)</li>
+                    <li>Spanish (native)</li>
+                </ul>
+            </div>
         </div>
     </div>
 
