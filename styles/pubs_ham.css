@@ -1,11 +1,13 @@
-/* styles.css */
-
-/* Estilo global */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fondo gris claro */
+    background-color: #f7f9fc;
+}
+
+/* Aplica la fuente Montserrat para los títulos */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Menú de hamburguesa */
@@ -57,6 +59,7 @@ body {
 #main-content {
     margin-right: 20px;
     transition: margin-right 0.5s;
+    max-width: 1000px;
     padding: 40px;
 }
 
@@ -116,6 +119,14 @@ body {
 
 .publication a:hover {
     text-decoration: underline;
+}
+
+/* Contenedor principal */
+#project-content {
+    margin-right: 20px;
+    transition: margin-right 0.5s;
+    padding: 40px;
+    margin-top: -100px;
 }
 
 /* Estilo responsive para publicaciones */
