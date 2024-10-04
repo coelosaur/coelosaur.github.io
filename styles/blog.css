@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+/* Aplica la fuente Montserrat para los títulos */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menú lateral a la derecha */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #033b70;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ff7b00;
+    color: #ffffff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Cuando el menú está abierto, cambiar la posición */
+.sidebar.open {
+    right: 0; /* Mover el menú a la vista */
+}
+
+/* Botón de menú de hamburguesa */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+/* Contenido principal ajustado para el menú a la derecha */
+#main-content {
+    margin-right: 20px;
+    transition: margin-right 0.5s;
+    max-width: 1000px;
+    padding: 40px;
+    margin:0 auto;
+}
+
+.blog-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Blog Post */
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    color: #033b70;
+    margin-bottom: 10px;
+}
+
+.blog-post .date {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f78d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #e67e00;
+}
+
+/* Footer */
+footer {
+    background-color: #033b70;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
