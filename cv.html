@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Ian del Rio</title>
+    <link rel="stylesheet" href="styles/cv_ham.css">
+</head>
+<body>
+
+    <!-- Menú de hamburguesa -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776; <!-- Símbolo de hamburguesa -->
+    </div>
+
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <div class="cv-container">
+
+            <!-- Columna izquierda (foto y contacto) -->
+            <div class="left-column">
+                <div class="photo">
+                    <img src="images/profile-image.jpeg" alt="Foto de Ian del Rio">
+                </div>
+                <section class="contact-info">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:iandelriogarcia@gmail.com">iandelriogarcia@gmail.com</a></p>
+                    <p>Phone: +55 (11) 99473-0326</p>
+                    <hr>
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li>R, Python, SQL</li>
+                        <li>Tableau, Power BI</li>
+                        <li>Git, Airflow</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                    <hr>
+                    <h2>Languages</h2>
+                    <p>English (Fluent)</p>
+                    <p>Portuguese (Fluent)</p>
+                    <p>Spanish (Native)</p>
+                </section>
+            </div>
+
+            <!-- Columna derecha (detalles del CV) -->
+            <div class="right-column">
+                <header>
+                    <h1>Ian del Rio</h1>
+                    <h2>Data Analyst</h2>
+                </header>
+                <section id="experience">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="job">
+                        <h3>Data Analyst, May 2022 - Present</h3>
+                        <p><strong>Fourth Sail Capital, LP (São Paulo, Brazil)</strong></p>
+                        <ul>
+                            <li>Collaborated with the equity research team...</li>
+                            <li>Reproduced market intelligence analysis...</li>
+                            <!-- Más detalles -->
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h3>Research Scientist, Sep 2017 - May 2022</h3>
+                        <p><strong>Universidade de São Paulo (São Paulo, Brazil)</strong></p>
+                        <ul>
+                            <li>Led the development of novel analytical methods...</li>
+                            <li>Provided comprehensive laboratory services...</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="education">
+                    <h2 class="section-title">Education</h2>
+                    <div class="degree">
+                        <h3>Ph.D. in Earth Sciences</h3>
+                        <p><strong>Universidad Católica del Norte (Antofagasta, Chile)</strong></p>
+                        <p>May 2014 - May 2019</p>
+                    </div>
+
+                    <div class="degree">
+                        <h3>M.Sc. in Engineering</h3>
+                        <p><strong>Universidad Complutense de Madrid (Madrid, Spain)</strong></p>
+                        <p>Sep 2012 - Oct 2013</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="javascript/cv_ham.js"></script>
+
+</body>
+</html>

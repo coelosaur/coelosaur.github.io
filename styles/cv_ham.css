@@ -1,0 +1,148 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+/* Menú de hamburguesa */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #033b70;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ff7b00;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+}
+
+/* Contenedor principal */
+#main-content {
+    margin-right: 20px;
+    transition: margin-right 0.5s;
+    padding: 40px;
+}
+
+/* Estilo del contenedor del CV */
+.cv-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Espacio entre las columnas */
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Columna izquierda (foto y contacto) */
+.left-column {
+    width: 40%;
+    background-color: #033b70;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.left-column .photo img {
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info a {
+    color: #ff7b00; /* Naranja */
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ff7b00; /* Línea separadora naranja */
+    margin: 15px 0;
+}
+
+/* Columna derecha (contenido del CV) */
+.right-column {
+    width: 70%;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #033b70;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #ff7b00;
+}
+
+.section-title {
+    color: #033b70;
+    border-left: 5px solid #ff7b00;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.job, .degree {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+    }
+}

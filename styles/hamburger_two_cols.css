@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Estilo básico para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento lateral */
+}
+
+/* Estilo del botón de hamburguesa */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+/* Menú lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #033b70;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Botón para cerrar el menú */
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+}
+
+/* Contenedor principal del CV */
+#main-content {
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+
+/* Cuando el menú lateral está abierto, desplazar el contenido */
+.menu-open #main-content {
+    margin-left: 260px; /* Ajustar según el ancho del menú */
+}
+
+/* Estilo del contenedor del CV con dos columnas */
+.cv-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+
+/* Estilos para encabezados y listas */
+h1, h2, h3 {
+    color: #033b70;
+}
+
+ul {
+    list-style-type: square;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+    }
+
+    .hamburger-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .left-column, .right-column {
+        width: 100%; /* Ambas columnas ocuparán todo el ancho */
+    }
+}

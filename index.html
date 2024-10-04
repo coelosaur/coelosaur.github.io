@@ -3,99 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian del Rio - CV</title>
-    <link rel="stylesheet" href="styles_index.css">
+    <title>Bienvenida - Ian del Rio</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    
+    <link rel="stylesheet" href="styles/index_ham.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <div class="navbar">
-        <a href="#home">Inicio</a>
-        <!--<a href="#experience">Experiencia</a>
-        <a href="#education">Educación</a>
-        <a href="#skills">Habilidades</a>-->
-        <a href="publications.html">Publicaciones</a> <!-- Enlace a la página de Publicaciones -->
+    <!-- Menú de hamburguesa -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
     </div>
 
-    <div class="container">
-        <!-- Columna Izquierda -->
-        <div class="left-column">
-            <h1 id="home">Ian del Rio</h1>
+    <!-- Menú lateral a la derecha -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="publicaciones.html">Publications</a>
+    </div>
 
-            <h2 id="experience">Professional experience</h2>
-            <p><strong>Data Analyst,</strong> May 2022 - Present<br>
-                <em>Fourth Sail Capital, LP (São Paulo, Brazil)</em></p>
-            <ul>
-                <li>• Collaborate with the equity research team to identify alternative data sources for energy, mining, agribusiness, and oil & gas sectors.</li>
-                <li>• Reproduce market intelligence analysis from sell-side reports.</li>
-                <li>• End-to-end data project development including web scraping, data modeling, ETL processes, and database maintenance.</li>
-                <li>• Conduct statistical analyses to track industry KPIs and extract relevant insights.</li>
-            </ul>
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <div class="welcome-container">
+            <header class="welcome-header">
+                <h1>Bienvenido a mi página personal</h1>
+                <p>Soy Ian del Rio, especialista en Ciencias de la Tierra, cambio climático y análisis de datos.</p>
+            </header>
 
-            <p><strong>Research Scientist,</strong> Sep 2017 - May 2022<br>
-                <em>Universidade de São Paulo (São Paulo, Brazil)</em></p>
-            <ul>
-                <li>• Led the development of novel analytical methods using numerical modeling and machine learning.</li>
-                <li>• Provided comprehensive laboratory services to external clients.</li>
-                <li>• Processed satellite imagery using Google Earth Engine.</li>
-            </ul>
-
-            <p><strong>Research Assistant,</strong> May 2014 - Aug 2017<br>
-                <em>CIGIDEN (Antofagasta, Chile)</em></p>
-            <ul>
-                <li>• Supported field and laboratory work for natural hazard assessments.</li>
-                <li>• Operated and analyzed data from GPS and drones.</li>
-            </ul>
-
-            <h2 id="education">Education history</h2>
-            <p><strong>Ph.D. in Earth Sciences,</strong> May 2014 - May 2019<br>
-                <em>Universidad Católica del Norte (Antofagasta, Chile)</em></p>
-            <p><strong>M.Sc. in Engineering,</strong> Sep 2012 - Oct 2013<br>
-                <em>Universidad Complutense de Madrid (Madrid, Spain)</em></p>
-            <p><strong>B.Sc. in Earth Sciences,</strong> Sep 2006 - May 2012<br>
-                <em>Universidad de Oviedo (Oviedo, Spain)</em></p>
-        </div>
-
-        <!-- Columna Derecha -->
-        <div class="right-column">
-            <div class="contact">
-                <img src="profile-image.jpeg" alt="Profile Image">
-                <div class="contact-info">
-                    <p>Email: <br><strong>iandelriogarcia@gmail.com</strong></p>
-                    <p>Phone: <br><strong>+55 (11) 99473-0326</strong></p>
-                </div>
+            <!-- Imagen de bienvenida -->
+            <div class="welcome-image">
+                <img src="images/profile-image.jpeg" alt="Ian del Rio">
             </div>
 
-            <div class="skills-section" id="skills">
-                <h2>Technical skills</h2>
-                <ul>
-                    <li>R, Python, SQL</li>
-                    <li>Tableau, Power BI</li>
-                    <li>Git, Airflow</li>
-                    <li>Data analysis, Statistics</li>
-                    <li>Regression, Machine learning</li>
-                    <li>Geoprocessing: ArcGIS, QGIS</li>
-                </ul>
+            <!-- Texto de introducción -->
+            <section class="welcome-text">
+                <p>En esta página, podrás conocer más sobre mi carrera profesional, mis publicaciones científicas y mis proyectos recientes en sostenibilidad, gestión de recursos y análisis de riesgos naturales.</p>
+                <p>Navega a través de las diferentes secciones para explorar mi currículum, leer mis artículos publicados o contactarme directamente.</p>
+                <p>¡Gracias por tu visita!</p>
+            </section>
 
-                <h2>Soft skills</h2>
-                <ul>
-                    <li>Communication</li>
-                    <li>Collaboration</li>
-                    <li>Adaptability</li>
-                    <li>Critical thinking</li>
-                    <li>Process oriented</li>
-                    <li>Time management</li>
-                </ul>
-
-                <h2>Languages</h2>
-                <ul>
-                    <li>English (fluent)</li>
-                    <li>Portuguese (fluent)</li>
-                    <li>Spanish (native)</li>
-                </ul>
-            </div>
+            <!-- Enlace a publicaciones -->
+            <section class="welcome-cta">
+                <a href="publications.html" class="cta-button">Ver mis publicaciones</a>
+            </section>
         </div>
     </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="javascript/index_ham.js"></script>
 
 </body>
 </html>

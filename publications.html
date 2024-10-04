@@ -3,33 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian del Rio - Publicaciones</title>
-    <link rel="stylesheet" href="styles_pubs.css">
+    <title>Publicaciones - Ian del Rio</title>
+    <link rel="stylesheet" href="styles/pubs_ham.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <div class="navbar">
-        <a href="index.html">Inicio</a>
-        <!--<a href="#experience">Experiencia</a>
-        <a href="#education">Educación</a>
-        <a href="#skills">Habilidades</a> -->
-        <a href="publications.html">Publicaciones</a> <!-- Enlace a la página de Publicaciones -->
+    <!-- Menú de hamburguesa a la derecha -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
     </div>
 
-    <div class="container">
-        <h1>Publicaciones</h1>
-
-        <h2>Artículo 1: <a href = "https://www.sciencedirect.com/science/article/abs/pii/S1871101423000018" target="_blank">Análisis de Datos en Geocronología</a></h2>
-        <p><strong>Publicado en:</strong> Revista Científica de XYZ, 2020<br>
-           <strong>Descripción:</strong> Un análisis detallado sobre los métodos avanzados de geocronología...</p>
-
-        <h2>Artículo 2: Modelado Numérico en Ciencias de la Tierra</h2>
-        <p><strong>Publicado en:</strong> Journal of Earth Sciences, 2019<br>
-           <strong>Descripción:</strong> Este artículo explora la aplicación de modelos numéricos para el estudio de terremotos...</p>
-
-        <!-- Añade más publicaciones aquí -->
+    <!-- Menú lateral a la derecha -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
     </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <div class="publications-container">
+            <header>
+                <h1>Publicaciones</h1>
+                <p>Aquí está el listado de mis publicaciones académicas y artículos científicos.</p>
+            </header>
+
+            <!-- Listado de publicaciones -->
+            <section class="publications-list">
+                <article class="publication">
+                    <h2>Del Rio, I., Smith, J., et al. (2023). A Novel Approach to Data Science in Climate Studies.</h2>
+                    <p><strong>Journal of Earth Sciences</strong>, 45(2), pp. 123-145.</p>
+                    <a href="https://doi.org/10.1016/j.earthscij.2023.01.001" target="_blank">DOI: 10.1016/j.earthscij.2023.01.001</a>
+                </article>
+
+                <article class="publication">
+                    <h2>Del Rio, I., Garcia, P., et al. (2022). Machine Learning Applications for Geospatial Data.</h2>
+                    <p><strong>International Journal of Geoinformatics</strong>, 50(4), pp. 98-120.</p>
+                    <a href="https://doi.org/10.1016/j.geoinf.2022.09.005" target="_blank">DOI: 10.1016/j.geoinf.2022.09.005</a>
+                </article>
+
+                <article class="publication">
+                    <h2>Del Rio, I., et al. (2021). Satellite Imagery Analysis for Risk Assessment in Natural Hazards.</h2>
+                    <p><strong>Natural Hazards Journal</strong>, 30(7), pp. 455-480.</p>
+                    <a href="https://doi.org/10.1016/j.nathaz.2021.06.011" target="_blank">DOI: 10.1016/j.nathaz.2021.06.011</a>
+                </article>
+                <!-- Agrega más publicaciones según sea necesario -->
+            </section>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="javascript/pubs_ham.js"></script>
 
 </body>
 </html>
