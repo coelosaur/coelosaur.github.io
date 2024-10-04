@@ -62,6 +62,7 @@ h1, h2, h3 {
     transition: margin-right 0.5s;
     max-width: 1000px;
     padding: 40px;
+    margin:0 auto;
 }
 
 .cv-container {
