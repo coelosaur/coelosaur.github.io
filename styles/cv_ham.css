@@ -76,13 +76,13 @@ h1, h2, h3 {
 
 /* Sección de contacto */
 .contact-info h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #033b70;
     border-bottom: 2px solid #ff7b00;
 }
 
 .contact-info p {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     margin: 5px 0;
 }
@@ -102,7 +102,7 @@ h1, h2, h3 {
 }
 
 .experience h2, .education h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #033b70;
     border-bottom: 2px solid #ff7b00;
     padding-bottom: 5px;
@@ -110,17 +110,17 @@ h1, h2, h3 {
 }
 
 .experience-item, .education-item {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: #033b70;
     margin: 0 0 10px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -147,7 +147,7 @@ h2 {
 }
 
 li {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
